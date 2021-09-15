@@ -1,3 +1,4 @@
+import lru_cache
 import unittest
 
 
@@ -7,4 +8,7 @@ class TestProgram(unittest.TestCase):
         lru_cache.put_key_value("first", 10)
         lru_cache.put_key_value("second", 11)
         lru_cache.put_key_value("third", 12)
-        self.assertEqual(lru_cache.get_value_from_key("first")
+        self.assertEqual(lru_cache.get_value_from_key("first"))
+                         
+if __name__ == '__main__':
+        unittest.main()
