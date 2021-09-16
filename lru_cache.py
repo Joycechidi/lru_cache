@@ -97,6 +97,11 @@ class LRUCache:
         
         """
         self.most_recent_list.update_head(node)
+        
+    def delete_least_recent(self):
+        key_to_delete = self.most_recent_list.tail.key
+        self.most_recent_list.remove_tail()
+        del self.cache[key_to_delete]
 
 
     def delete_key(self):
