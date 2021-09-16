@@ -15,6 +15,11 @@ Map them to nodes in a doubly linked list containing the keys’ corresponding v
 With these 2 data structures, any key-value pair can be accessed easily from the hash table and easily move nodes in the linkedlist in order to keep track of the most recent and least recent key-value pairs
 Linkedlist will keep track of the order of the pairs which helps with updating the least recent key-value pairs after deletion.
 
-#How to use this repository
+**How to use this repository**
+1. This program is written in Python version 3.7.9
+2. There are two python files in this repository. lru_cache.py and lru_cache_test.py
+3. lru_cache.py contains the classes and methods for implementing least recently used cache strategy. Both files can be run in a terminal on Mac OS or command prompt on Windows PCs. 
+4. Ensure python 3 is installed in your computer. Download the two python files.
+5. Open a terminal window in the directory where the downloaded python files are located. Type in the command "python lru_cache.py" to run the first file. You can open another command prompt window and type "python lru_cache_test.py".
 
 
