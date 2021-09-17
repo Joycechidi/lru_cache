@@ -46,8 +46,8 @@ class DoublyLinkedList:
             self.head = None
             self.tail = None
             return 
-            self.tail = self.tail.prev
-            self.tail.next = None
+        self.tail = self.tail.prev
+        self.tail.next = None
 
 class LRUCache:
 
@@ -104,7 +104,7 @@ class LRUCache:
         del self.cache[key_to_delete]
 
 
-    def delete_key(self):
+    def delete_key(self, key):
         """
         Delete a key (In this case, delete the least recently used)
         """
